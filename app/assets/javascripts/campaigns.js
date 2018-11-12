@@ -29,6 +29,11 @@ $( document ).ready(function() {
         $('#campaign_email_settings_attributes_smtp_server_out').val('smtp.sendgrid.net');
         $('#campaign_email_settings_attributes_smtp_port').val('2525');
         break;
+      case 'localhost':
+        $('#campaign_email_settings_attributes_smtp_server_out').val('localhost');
+        $('#campaign_email_settings_attributes_authentication').val('plain');
+        $('#campaign_email_settings_attributes_smtp_port').val('25');
+        break;
     }
   });
 
